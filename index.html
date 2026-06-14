@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kuruchan2463 — ホーム</title>
+  <meta name="description" content="Kuruchan2463 の公式ホームページ。Minecraft のプレイや活動を紹介する個人サイト。" />
+  <meta property="og:title" content="Kuruchan2463" />
+  <meta property="og:description" content="Kuruchan2463 の公式ホームページ。Minecraft のプレイや活動を紹介する個人サイト。" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="Kuruchan.png" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <div class="logo">Kuruchan2463</div>
+      <ul class="nav-links">
+        <li><a href="#about">プロフィール</a></li>
+        <li><a href="#user-info">ユーザー情報</a></li>
+        <li><a href="#qa">Q &amp; A</a></li>
+        <li><a href="#updates">サイトのアップデート情報</a></li>
+        <li><a href="#credits">クレジット</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <img class="avatar" src="Kuruchan.png" alt="Kuruchan の写真" />
+      <div class="hero-text">
+        <h1>Kuruchan2463</h1>
+        <p class="tagline">様々なことを取り組むマインクラフトプレイヤー</p>
+        <p class="lead">ここでは活動内容やプロフィールを掲載しています。ゆっくりご覧ください。</p>
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h2>プロフィール</h2>
+      <p>こんにちは！Kuruchan2463です！<br>様々なことに挑戦していろいろな技術を磨いて行きたいです！</p>
+    </section>
+
+    <section id="user-info" class="container about">
+      <h2>ユーザー情報</h2>
+      <ul class="user-info">
+        <li>マインクラフト統合版ユーザー名: <strong>Kuruchan2463</strong></li>
+        <li>マインクラフトJavaユーザー名: <strong>Kuruchan31</strong></li>
+        <li>Xbox: <strong>Kuruchan2463</strong></li>
+      </ul>
+    </section>
+
+    <section id="qa" class="container about">
+      <h2>Q &amp; A</h2>
+      <dl class="qa-list">
+        <div class="qa-item"><dt>一番好きな食べ物は？</dt><dd>寿司</dd></div>
+        <div class="qa-item"><dt>好きなゲームは？</dt><dd>Mine Craft</dd></div>
+        <div class="qa-item"><dt>機種は？</dt><dd>ノートPC</dd></div>
+        <div class="qa-item"><dt>OSは？</dt><dd>Windows</dd></div>
+        <div class="qa-item"><dt>将来の夢は？</dt><dd>ない</dd></div>
+      </dl>
+    </section>
+
+
+  </main>
+
+    <section id="updates" class="container about">
+      <h2>サイトのアップデート情報</h2>
+      <p>v1.0 — 2026年6月14日に公開</p>
+    </section>
+
+    <section id="credits" class="container about">
+      <h2>クレジット</h2>
+      <p>情報提供: Kuruchan2463</p>
+      <p>サイト制作: Conbi Fan</p>
+    </section>
+
+  <footer class="site-footer">
+    <div class="container">© Kuruchan2463</div>
+  </footer>
+
+  <button id="topBtn" class="top-btn" aria-label="トップへ">TOP</button>
+
+  <script>
+    // TOPボタンの表示制御とスムーススクロール
+    (function(){
+      const btn = document.getElementById('topBtn');
+      if(!btn) return;
+      const showAt = 200;
+      window.addEventListener('scroll', () => {
+        if(window.scrollY > showAt) btn.classList.add('show');
+        else btn.classList.remove('show');
+      });
+      btn.addEventListener('click', () => {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+      });
+    })();
+  </script>
+
+</body>
+</html>
