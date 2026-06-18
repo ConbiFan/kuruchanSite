@@ -18,8 +18,8 @@
         <li><a href="#about">プロフィール</a></li>
         <li><a href="#user-info">ユーザー情報</a></li>
         <li><a href="#qa">Q &amp; A</a></li>
-        <li><a href="#updates">サイトのアップデート情報</a></li>
-        <li><a href="#credits">クレジット</a></li>
+        <li><a href="#syasin">集合写真</a></li>
+        <li><a href="#syousai">詳細情報</a></li>
       </ul>
     </nav>
   </header>
@@ -36,14 +36,14 @@
 
     <section id="about" class="container about">
       <h2>プロフィール</h2>
-      <p>こんにちは！Kuruchan2463です！<br>様々なことに挑戦していろいろな技術を磨いて行きたいです！</p>
+      <p>こんにちは！Kuruchan2463です！<br>様々なことに挑戦していろいろな技術を磨いていきたいです！</p>
     </section>
 
     <section id="user-info" class="container about">
       <h2>ユーザー情報</h2>
       <ul class="user-info">
-        <li>マインクラフト統合版ユーザー名: <strong>Kuruchan2463</strong></li>
         <li>マインクラフトJavaユーザー名: <strong>Kuruchan31</strong></li>
+        <li>マインクラフト統合版ユーザー名: <strong>Kuruchan2463</strong></li>
         <li>Xbox: <strong>Kuruchan2463</strong></li>
       </ul>
     </section>
@@ -52,26 +52,76 @@
       <h2>Q &amp; A</h2>
       <dl class="qa-list">
         <div class="qa-item"><dt>一番好きな食べ物は？</dt><dd>寿司</dd></div>
-        <div class="qa-item"><dt>好きなゲームは？</dt><dd>Mine Craft</dd></div>
+        <div class="qa-item"><dt>好きなゲームは？</dt><dd>Minecraft</dd></div>
         <div class="qa-item"><dt>機種は？</dt><dd>ノートPC</dd></div>
         <div class="qa-item"><dt>OSは？</dt><dd>Windows</dd></div>
         <div class="qa-item"><dt>将来の夢は？</dt><dd>ない</dd></div>
       </dl>
     </section>
 
+    <section id="syasin" class="container about">
+      <h2>集合写真</h2>
+      <h3>集合写真1</h3>
+      <p><img src="one.jpeg"></p>
+      <h3>集合写真2</h3>
+      <p><img src="two.jpeg"></p>
+      <h3>集合写真3</h3>
+      <p><img src="three.jpeg"></p>
+      <h2>撮影に出た人</h2>
+      <ul>
+        <li>Kuruchan2463</li>
+        <li>syunnsetata</li>
+        <li>touhou4Dskin</li>
+        <li>remiria1315</li>
+        <li>Nabo8750</li>
+        <li>SickDuckling133</li>
+        <li>Kuruchan2463</li>
+        <li>yuu 6 2 9</li>
+        <li>TweakyGold64914</li>
+        <li>BoredEmperor144</li>
+      </ul>
+    </section>
+
 
   </main>
 
-    <section id="updates" class="container about">
-      <h2>サイトのアップデート情報</h2>
-      <p>v1.0 — 2026年6月14日に公開</p>
-    </section>
+  <section id="syousai" class="container about">
+  <button class="toggle-btn" aria-expanded="false" aria-controls="details">
+    詳細情報を表示
+  </button>
+  <div id="details" class="details" hidden>
+  <h2>アップデート履歴</h2>
+  <ul>
+  <li><strong>v1.1</strong> - 2026年6月18日に誤字修正、文字を見やすく変更、集合写真追加、詳細追加など...</li>
+  <li><strong>v1.0</strong> - 2026年6月14日に公開</li>
+  </ul>
 
-    <section id="credits" class="container about">
-      <h2>クレジット</h2>
-      <p>情報提供: Kuruchan2463</p>
-      <p>サイト制作: Conbi Fan</p>
-    </section>
+    <h3>クレジット</h3>
+
+    <p>Kuruchan2463：情報提供、指定、指示、ユーザー情報提案、アップデート情報提案、クレジット提案</p>
+
+    <p>Conbi Fan：全体サイト制作、全体サイト管理、全体サイトデザイン、一言とプロフィール提案、Q&A提案</p>
+  </div>
+</section>
+
+<script>
+const button = document.querySelector(".toggle-btn");
+const details = document.getElementById("details");
+
+button.addEventListener("click", () => {
+  const isHidden = details.hasAttribute("hidden");
+
+  if (isHidden) {
+    details.removeAttribute("hidden");
+    button.textContent = "詳細情報を隠す";
+    button.setAttribute("aria-expanded", "true");
+  } else {
+    details.setAttribute("hidden", "");
+    button.textContent = "詳細情報を表示";
+    button.setAttribute("aria-expanded", "false");
+  }
+});
+</script>
 
   <footer class="site-footer">
     <div class="container">© Kuruchan2463</div>
